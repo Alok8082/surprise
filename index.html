@@ -164,22 +164,24 @@
     }
 
     #animationVideo {
-      position: fixed;
-      top: 50%; left: 50%;
-      width: 40vw; height: 100vh;
-      object-fit: cover;
-      transform: translate(-50%, -50%);
-      z-index: -1;
-      opacity: 0;
-      transition: opacity 1s ease;
-    }
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     width: 100vw;
+     height: 100vh;
+     object-fit: contain;
+     transform: translate(-50%, -50%);
+     z-index: -1;
+     opacity: 0;
+     transition: opacity 1s ease;
+}
     #animationVideo.show { opacity: 1; }
   </style>
 </head>
 <body>
 
 <div id="flowerRain"></div>
-<video id="animationVideo" class="hidden" src="Video.mp4" autoplay muted></video>
+<video id="animationVideo" class="hidden" src="Video.mp4" autoplay muted playsinline></video>
 <div id="balloons" class="hidden"></div>
 <div id="fireworks"></div>
 
